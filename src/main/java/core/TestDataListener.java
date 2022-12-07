@@ -15,23 +15,23 @@ public class TestDataListener extends TestListenerAdapter {
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-        log.info("Тест завершился успешно: " + iTestResult.getMethod().getDescription() + "\n");
+        log.info("Test finished successfully: " + iTestResult.getMethod().getDescription() + "\n");
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        log.info("Тест завершился провалом: " + iTestResult.getMethod().getDescription() + "\n");
+        log.info("Test failed: " + iTestResult.getMethod().getDescription() + "\n");
         attachScreenshot();
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        log.info("Тест пропущен: " + iTestResult.getMethod().getDescription() + "\n");
+        log.info("Test skipped: " + iTestResult.getMethod().getDescription() + "\n");
     }
 
     @Override
     public void onTestStart(ITestResult result) {
-        log.info("Выполняется тест: " + result.getMethod().getDescription() + "\n");
+        log.info("Running test: " + result.getMethod().getDescription() + "\n");
     }
 
     @Attachment(type = "image/png")
