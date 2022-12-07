@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
 /**
- * Base Selenide page with common methods and fields
+ * Base Selenide page with common methods and locators
  */
 public class BasePage {
 
