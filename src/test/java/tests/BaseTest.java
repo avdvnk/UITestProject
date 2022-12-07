@@ -13,12 +13,18 @@ import org.testng.annotations.Listeners;
 import pages.DocsPage;
 import pages.MainPage;
 
+/**
+ * Class for test initialization
+ */
 @Listeners({TestDataListener.class})
 public abstract class BaseTest {
 
     protected MainPage mainPage;
     protected DocsPage docsPage;
 
+    /**
+     * Setup configurations for Selenide and open start page
+     */
     @BeforeMethod(alwaysRun = true)
     public void initTestEnv() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -39,6 +45,9 @@ public abstract class BaseTest {
         mainPage = Selenide.open(startEndpoint, MainPage.class);
     }
 
+    /**
+     * Close web driver after test finishing
+     */
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         Selenide.closeWebDriver();

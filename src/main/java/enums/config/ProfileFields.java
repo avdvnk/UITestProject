@@ -2,6 +2,9 @@ package enums.config;
 
 import lombok.Getter;
 
+/**
+ * Enum defines fields in profile to customize test run
+ */
 public enum ProfileFields {
     enableVNC("enableVNC"),
     enableVideo("enableVideo"),

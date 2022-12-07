@@ -2,6 +2,9 @@ package enums.pages.docs;
 
 import lombok.Getter;
 
+/**
+ * Enum with chapters on Docs page
+ */
 public enum LeftMenuChapters {
     screenshots("Screenshots");
 

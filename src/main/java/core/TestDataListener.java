@@ -10,6 +10,9 @@ import org.testng.TestListenerAdapter;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Listener class for logging and additional actions during test running
+ */
 @Slf4j
 public class TestDataListener extends TestListenerAdapter {
 
@@ -34,6 +37,10 @@ public class TestDataListener extends TestListenerAdapter {
         log.info("Running test: " + result.getMethod().getDescription() + "\n");
     }
 
+    /**
+     * Method attaches screenshot to test case in Allure report
+     * @return Screenshot in byte array
+     */
     @Attachment(type = "image/png")
     private byte[] attachScreenshot() {
         try {

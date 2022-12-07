@@ -8,6 +8,9 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selectors.withTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
+/**
+ * Class contains locator and methods for Docs page
+ */
 public class DocsPage extends BasePage {
     // Docs left menu
     private final SelenideElement leftMenu = $(".left-menu");

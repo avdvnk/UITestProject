@@ -9,6 +9,9 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
+/**
+ * Base Selenide page with common methods and fields
+ */
 public class BasePage {
 
     // Main menu pages

@@ -7,6 +7,9 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$$;
 
+/**
+ * Class contains locators and methods for main Selenide page
+ */
 public class MainPage extends BasePage {
     // All headers on main page
     ElementsCollection h3Headers = $$("h3");

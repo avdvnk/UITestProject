@@ -6,6 +6,9 @@ import java.io.FileInputStream;
 import java.nio.file.Path;
 import java.util.Properties;
 
+/**
+ * Class helps to load profile values with custom test run
+ */
 @Slf4j
 public class ConfigHelper {
 
